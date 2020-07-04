@@ -1,0 +1,516 @@
+body{
+  font-family: Arial, Helvetica,sans-serif;
+  color: #414071;
+  line-height: 1.42857143;
+  font-size:16px;
+  font-weight: bold;
+}
+
+
+header {
+  padding : 0px 2px;
+  margin-bottom: 50px;
+}
+
+.Heading {
+  display: fixed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: centefr;
+  padding: 15px 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;  
+}
+
+li a:hover:not(.active) {
+  background-color:gray;
+  border-radius: 15px;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+.style{
+    background-color: #4CAF50;
+  }
+
+  /*magic words*/
+  @font-face {
+	font-family: system;
+	font-style: normal;
+	font-weight: 600;
+	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  }
+/*
+  * {
+	margin:0;
+	padding:0;
+	background:transpant;
+	font-family: "system";
+  }*/
+  
+  .container {
+	width: 600px;
+  display: inline;
+  
+  }
+  
+  .word {
+	font-size:3em;
+	font-weight:bold;
+	float:left;
+	opacity:0;
+	position:absolute;
+	top:40%;
+  left:40%;
+  }
+  
+  .w1 {
+	animation: w1anim 20s infinite;
+  }
+  
+  .w2 {
+	animation: w2anim 20s infinite;
+  }
+  
+  .w3 {
+	animation: w3anim 20s infinite;
+  }
+  
+  
+  
+  @keyframes w1anim {
+	0%{
+	  opacity: 0;
+	}
+	15%{
+	  opacity: 1;
+	}
+	30% {
+	  opacity:0;
+	}
+  }
+  
+  
+  @keyframes w2anim {
+	30%{
+	  opacity: 0;
+	}
+	45%{
+	  opacity: 1;
+	}
+	60% {
+	  opacity:0;
+	}
+  }
+  
+  @keyframes w3anim {
+	60%{
+	  opacity: 0;
+	}
+	80%{
+	  opacity: 1;
+	}
+	100% {
+	  opacity:0;
+	}
+  }
+
+
+  /*button*/
+
+.butts{
+  text-align: center;
+}
+  
+  .button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 70px;
+    cursor: pointer;
+    
+  }
+  
+  .button6 {
+    background-color: rgb(245, 11, 175);
+    margin-left: -600px;
+    
+  } 
+  .button7 {background-color: rgb(23, 20, 211);} 
+
+
+  /*welcome*/
+
+.welcome{
+  background-color: rgb(207, 205, 205);
+  height: 780px;
+}
+
+
+
+/*our mission*/
+.mission{
+  font-family: avenirnextLTpro-regular,sans-serif;;
+  color: rgba(35, 35, 35, 0.84);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
+  margin-top: -290px;
+  width: 800px;
+}
+
+.missions{
+  font-family: avenirnextLTpro-regular,sans-serif;;
+  color: rgba(35, 35, 35, 0.84);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: justify;
+  width: 800px;
+}
+
+/*cricle image
+
+#wheel {
+  height: 80vmin;
+  animation: spin 5s linear 0s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+<img style="height:300px;" id="wheel" src="https://img.icons8.com/officel/480/000000/wheel.png"/>
+*/
+
+/*our team*/
+.team{
+  color: #808080;
+}
+.row0 {
+  display: flex;
+}
+
+.column0 {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/*about us*/
+.ab-ab{
+	background: #bbb;
+	padding-bottom: 50px;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  .wrapper1 {
+	  position: relative;
+	  overflow: hidden;
+	  width: 600px;
+	  height: 370px; 
+	  
+  }
+  
+  #slide1 {
+	  position: absolute;
+	  left: -600px;
+	  width: 600px;
+	  height: 370px;
+	  background: #bbb;
+	  -webkit-animation: slide 0.5s forwards;
+	  -webkit-animation-delay: 2s;
+	  animation: slide 0.5s forwards;
+    animation-delay: 2s;
+    
+  }
+  
+  @-webkit-keyframes slide {
+	  100% { left: 0; }
+  }
+  
+  @keyframes slide {
+	  100% { left: 0; }
+  }
+  
+  
+
+
+/**/
+
+  
+  /* Create two equal columns that floats next to each other */
+  .ab-column {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: 450px; /* Should be removed. Only for demonstration */
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: 40;
+	box-sizing: border-box;
+}
+  
+  /* Clear floats after the columns */
+  .ab-row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.ab-column {
+	  width: 100%;
+	}
+  }
+
+
+  /*Recognitions*/
+.regg{
+	background-color: none;
+	height: 600px;
+}
+
+.reg{
+	font-size: xx-large;
+}
+
+
+  /*contact us*/
+ /* body {font-family: Arial, Helvetica, sans-serif;
+    color:rgb(65, 64, 113);}*/
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: 8px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.bg-img{
+  background-image: url("1.jpg");
+  
+}
+.container22 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+/*footer*/
+
+.footer {
+  display: table;
+  width: 100%;
+  background-color: rgb(185, 184, 187);
+  height: 300px;
+  text-align: justify;
+}
+
+.row4 {
+  display: table-row;
+  width: 20%;
+}
+
+.column4 {
+  display: table-cell;
+}
+.list {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-bottom: 20;
+ 
+}
+
+.contents,.proj {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 0%;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 2%;
+}
+.cleft {
+  float: left;
+  width: 38.5%;
+  height: 75%;
+  margin-top: 5%;
+}
+/* links*/
+
+.social-media{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a{
+  display: flex;
+  background-color: #bbb;
+  height: 55px;
+  width: 55px;
+  margin: 11px 55px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(172, 170, 170, 0.7);
+              border: 1px solid rgba(0,0,0,0);
+           transition: transform 0.5s;
+}
+
+.social-media a i{
+  font-size: 25px;
+  color: #777;
+  transition: tranform 0.5s;
+}
+
+.social-media a:hover{
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.15),
+              inset -4px -6px 6px -1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+              border: 1px solid rgba(0,0,0,0.01);
+              transform: translateY(2px);
+}
+.social-media a:hover i{
+  transform: scale(0.90);
+}
+
+.social-media a:hover .fa-twitter{
+  color: #00acee;
+}
+.social-media a:hover .fa-linkedin{
+  color: blue;
+}
+.social-media a:hover .fa-instagram{
+  color: #f14843;
+}
+.social-media a:hover .fa-whatsapp{
+  color: #f14843;
+}
+
+
+  /*slide changing*/
+  
+#c_slider {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background: rgb(185, 184, 187);
+  overflow: hidden;
+  border: 5px solid white;
+}
+#c_slider #cslider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#c_slider #prev {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+#c_slider #next {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 100;
+}
+#cslider > div {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  margin: auto 0;
+  transition: 1s;
+  transform-origin: left center;
+  border-radius: 50%;
+}
+
+#cslider > div:nth-child(even) {
+  background: white;
+}
+
+#cslider .p {
+  transform: scale(0.5);
+}
+#cslider .n {
+  transform: scale(0.5);
+}
+#cslider .n:first-child {
+  z-index: 10;
+}
+#cslider .active {
+  transform: scale(1);
+}
+
+@media (max-width:720px) {
+  body{
+    font-family: Arial, Helvetica,sans-serif;
+    color: #414071;
+    line-height: 1.42857143;
+    font-size:5px;
+    font-weight: bold;
+  }
+  
+}
